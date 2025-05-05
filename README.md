@@ -19,7 +19,7 @@ A cross-platform mobile app built with React Native (Expo) that allows users to 
 ---
 
 ## 📸 Demo Video
-[Watch here]((https://www.loom.com/share/8a875bc321af46d7a11ceadb4711c9d6)) (3–5 mins walkthrough)
+[Watch here](https://www.loom.com/share/8a875bc321af46d7a11ceadb4711c9d6) (3–5 mins walkthrough)
 
 ---
 
