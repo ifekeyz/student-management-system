@@ -39,7 +39,7 @@ export default function HomeScreen() {
   return (
     <SafeAreaView className="flex-1 bg-white">
       <View className="p-4">
-        <Text className="text-2xl font-nunito-bold text-[#031E3C] text-center">Student List</Text>
+        <Text className="text-2xl font-nunito-bold text-[#031E3C] text-center mt-4">Student List</Text>
         <Text className="text-sm text-gray-600 font-nunito text-center mt-1">
           {filter === 'All' ? 'Showing all students' : `Filtered by: ${filter}`}
         </Text>

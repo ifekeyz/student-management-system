@@ -84,7 +84,7 @@ export default function AddStudentScreen({ navigation }: any) {
         contentContainerStyle={{ paddingBottom: 30 }}
       >
         <Animated.View style={{ transform: [{ scale: scaleAnim }] }}>
-          <Text className="text-2xl font-nunito-bold text-[#031E3C] mb-4">Add Student</Text>
+          <Text className="text-2xl font-nunito-bold text-[#031E3C] my-4">Add Student</Text>
         </Animated.View>
         <Text className="font-nunito text-base mb-2">Full name</Text>
         <TextInput placeholder="Name" value={name} onChangeText={setName} className="border border-[#E7E7E7] bg-[#F6F6F6] p-4 mb-4 rounded-lg font-nunito" />
@@ -97,11 +97,20 @@ export default function AddStudentScreen({ navigation }: any) {
           className="border p-4 mb-4 rounded-lg font-nunito border-[#E7E7E7] bg-[#F6F6F6]"
         />
         <Text className="font-nunito text-base mb-2">Enrollment Status</Text>
-        <Picker selectedValue={status} onValueChange={(itemValue: any) => setStatus(itemValue)}>
-          <Picker.Item label="Enrolled" value="Enrolled" />
-          <Picker.Item label="Graduated" value="Graduated" />
-          <Picker.Item label="Alumni" value="Alumni" />
-        </Picker>
+        <View className="border border-[#E7E7E7] rounded mb-4 bg-[#F6F6F6]">
+          <Picker
+            selectedValue={status}
+            onValueChange={(itemValue) => setStatus(itemValue)}
+            style={{ color: '#031E3C' }}
+            itemStyle={{ color: '#031E3C', fontSize: 18, fontFamily: 'Nunito' }}
+
+          >
+            <Picker.Item label="Enrolled" value="Enrolled" />
+            <Picker.Item label="Graduated" value="Graduated" />
+            <Picker.Item label="Alumni" value="Alumni" />
+          </Picker>
+        </View>
+
         <Text className="font-nunito text-base mb-2">Profile Photo</Text>
         <TouchableOpacity onPress={pickImage} className="mb-2 bg-blue-100 p-2 rounded">
           <Text className='text-center font-nunito text-base'>
